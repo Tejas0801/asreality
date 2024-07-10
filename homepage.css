@@ -6,33 +6,72 @@ body, html {
     scroll-behavior: smooth;
 }
 
-.video-background {
-    position: relative;
-    height: 100vh;
-    overflow: hidden;
-    margin-top: 70px; /* Adjust for fixed header */
+/* homepage.css */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
 }
 
-video {
+.navbar {
+    z-index: 1000;
+}
+
+.video-background {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.video-background .video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
     width: 100%;
     height: 100%;
     object-fit: cover;
+    transform: translate(-50%, -50%);
+    z-index: -1;
 }
 
-.overlay {
+.video-background .overlay {
     position: absolute;
     top: 0;
     left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: white;
-    text-align: center;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
 }
+
+.hidden {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.show {
+    opacity: 1;
+}
+
+.cta-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.cta-button:hover {
+    background: #0056b3;
+}
+
 
 section {
     padding: 60px 20px;
