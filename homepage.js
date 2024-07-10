@@ -1,28 +1,20 @@
-$(document).ready(function() {
-    $('a.nav-link').on('click', function(event) {
-        if (this.hash !== "") {
+document.addEventListener("DOMContentLoaded", function() {
+    const links = document.querySelectorAll("nav ul li a");
+
+    links.forEach(link => {
+        link.addEventListener("click", function(event) {
             event.preventDefault();
-            var hash = this.hash;
-            $('html, body').animate({
-                scrollTop: $(hash).offset().top - 70
-            }, 800);
-        }
-    });
+            const targetId = event.target.getAttribute("href").substring(1);
+            const targetSection = document.getElementById(targetId);
 
-    const observer = new IntersectionObserver((entries, observer) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('show');
-                observer.unobserve(entry.target);
-            }
+            window.scrollTo({
+                top: targetSection.offsetTop,
+                behavior: "smooth"
+            });
         });
-    }, {
-        threshold: 0.1
-    });
-
-    document.querySelectorAll('section').forEach(section => {
-        observer.observe(section);
     });
 });
+
+
 
 
