@@ -6,12 +6,12 @@
     <title>AS Vision Constructions</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="homepage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
     <header class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <a class="navbar-brand" href="#">
-            <img src="assets/AsLogo.png" alt="Company Logo" class="d-inline-block align-top">
-            <span class="brand-text">AS<span class="brand-text2">VISION</span></span>
+            <img src="assets/AsLogo.png" alt="Company Logo" height="80">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -19,8 +19,8 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item"><a class="nav-link" href="#home">HOME</a></li>
-                <li class="nav-item"><a class="nav-link" href="#services">SERVICES</a></li>
                 <li class="nav-item"><a class="nav-link" href="#about">ABOUT</a></li>
+                <li class="nav-item"><a class="nav-link" href="#services">SERVICES</a></li>
                 <li class="nav-item"><a class="nav-link" href="#projects">PROJECTS</a></li>
                 <li class="nav-item"><a class="nav-link" href="#contact">CONTACT</a></li>
             </ul>
@@ -32,36 +32,83 @@
             <source src="assets/hpintor.mov" type="video/mp4">
         </video>
         <div class="overlay">
-            <h1>Leaders in Quality Construction and Infrastructure</h1>
-            <div class="scroll-indicator">&#9660;</div>
+            <h1>BUILDING INDIA,<br> ONE WAREHOUSE AT A TIME</h1>
+            <div class="scroll-indicator">
+                <a href="#about"><i class="fas fa-chevron-down"></i></a>
+            </div>
         </div>
     </div>
 
-    <!-- Services section should start here and scroll into view -->
-    <section id="services" class="container mt-5 pt-5">
-        <h2 class="section-title">Services</h2>
-        <div class="row">
-            <div class="col-md-4 service-item">
-                <img src="assets/Service1.jpg" alt="Preconstruction Planning" class="img-fluid">
-                <h3>Preconstruction Planning</h3>
-                <p>Click here to add your own text and edit me. It's easy. Just click “Edit Text”.</p>
+    <div class="content">
+        <section id="about" class="container-fluid about-section mt-5 pt-5">
+            <div class="row align-items-center">
+                <div class="col-md-6 about-text">
+                    <h2 class="section-title">Welcome to AS Vision</h2>
+                    <p class="pstyle m-3 text-align-center">
+                        At AS Vision, we specialize in constructing state-of-the-art warehouses tailored to meet the diverse needs of our clients. With a rich legacy of excellence in construction and a commitment to quality, we have become a trusted name in the industry. Our warehouses are designed with a focus on efficiency, durability, and innovation, ensuring that our clients receive the best solutions for their storage and logistical needs.</p>
+                        <h2 class="m-3">Our Mission</h2>
+                        <p class="pstyle m-3 text-align-center">To deliver exceptional warehouse construction services that exceed client expectations, driven by innovation, quality, and sustainability.</p>
+                        <h2 class="m-3">Our Vision</h2>
+                        <p class="pstyle m-3 text-align-center">To be the leading warehouse construction company, known for our excellence in design, construction, and customer satisfaction.</p>
+                </div>
+                <div class="col-md-6 about-image">
+                    <img src="assets/About.png" alt="About Us" class="img-fluid">
+                </div>
             </div>
-            <div class="col-md-4 service-item">
-                <img src="assets/Service2.jpg" alt="Architectural Modelling" class="img-fluid">
-                <h3>Architectural Modelling</h3>
-                <p>Click here to add your own text and edit me. It's easy. Just click “Edit Text”.</p>
+        </section>
+
+        <section id="services" class="container-fluid mt-5 pt-5">
+            <h2 class="section-title">Services</h2>
+            <div class="row m-3">
+                <div class="col-md-4 service-item">
+                    <img src="assets/Service1.jpg" alt="Custom Warehouse Design" class="img-fluid animate__animated animate__fadeInLeft">
+                    <h3>Custom Warehouse Design</h3>
+                    <p>We provide tailored warehouse designs to meet specific client needs, ensuring optimal space utilization and functionality.</p>
+                </div>
+                <div class="col-md-4 service-item">
+                    <img src="assets/Service2.jpg" alt="Sustainable Building Practices" class="img-fluid animate__animated animate__fadeInUp">
+                    <h3>Sustainable Building Practices</h3>
+                    <p>Our construction practices prioritize sustainability, using eco-friendly materials and methods to reduce environmental impact.</p>
+                </div>
+                <div class="col-md-4 service-item">
+                    <img src="assets/Service3.jpg" alt="Maintenance and Support" class="img-fluid animate__animated animate__fadeInRight">
+                    <h3>Maintenance and Support</h3>
+                    <p>We offer comprehensive maintenance and support services to ensure the longevity and efficiency of our constructed warehouses.</p>
+                </div>
             </div>
-            <div class="col-md-4 service-item">
-                <img src="assets/Service3.jpg" alt="Construction Management" class="img-fluid">
-                <h3>Construction Management</h3>
-                <p>Click here to add your own text and edit me. It's easy. Just click “Edit Text”.</p>
+        </section>
+
+        <section id="featured-project" class="container-fluid featured-project-section mt-5 pt-5">
+            <h2 class="section-title">Featured Project</h2>
+            <div class="row align-items-center m-2">
+                <div class="col-md-6">
+                    <img src="assets/Service1.jpg" alt="Featured Project" class="img-fluid animate__animated animate__fadeInLeft">
+                </div>
+                <div class="col-md-6">
+                    <h3>Gurram Pallem, Vizag</h3>
+                    <h4>ALPHA 1 VIZAG</h4>
+                    <p>Discover our latest warehouse project located in Gurram Pallem, Vizag, near a 6-lane highway. Designed for efficiency and accessibility, this facility is set to redefine standards in warehouse construction.</p>
+                    <a href="project-details.html" class="btn btn-primary">Know More</a>
+                </div>
             </div>
-        </div>
-    </section> 
+        </section>
+    </div>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </body>
 </html>
+
+
 
