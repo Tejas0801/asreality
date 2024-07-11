@@ -25,18 +25,19 @@ header {
 }
 
 .nav-link {
-    color: #000000;
+    color: #ffffff !important;
     margin: 0 10px;
     padding: 5px 10px;
     transition: transform 0.3s ease, color 0.1s ease;
     font-size: large;
-    font-weight: 200;
-    text-decoration: underline;
+
 }
 
 .nav-link:hover {
     color: black !important;
     transform: scale(1.4);
+    transform-style: preserve-3d;
+    
 }
 
 .video-container {
