@@ -7,6 +7,7 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="homepage.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" /> -->
 </head>
 <body>
     <header class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
@@ -40,16 +41,16 @@
     </div>
 
     <div class="content">
-        <section id="about" class="container-fluid about-section mt-5 pt-5">
+        <section id="about" class="container-fluid about-section mt-5 pt-5" data-aos="fade-up">
             <div class="row align-items-center">
                 <div class="col-md-6 about-text">
                     <h2 class="section-title">Welcome to AS Vision</h2>
                     <p class="pstyle m-3 text-align-center">
                         At AS Vision, we specialize in constructing state-of-the-art warehouses tailored to meet the diverse needs of our clients. With a rich legacy of excellence in construction and a commitment to quality, we have become a trusted name in the industry. Our warehouses are designed with a focus on efficiency, durability, and innovation, ensuring that our clients receive the best solutions for their storage and logistical needs.</p>
-                        <h2 class="m-3">Our Mission</h2>
-                        <p class="pstyle m-3 text-align-center">To deliver exceptional warehouse construction services that exceed client expectations, driven by innovation, quality, and sustainability.</p>
-                        <h2 class="m-3">Our Vision</h2>
-                        <p class="pstyle m-3 text-align-center">To be the leading warehouse construction company, known for our excellence in design, construction, and customer satisfaction.</p>
+                    <h2 class="m-3">Our Mission</h2>
+                    <p class="pstyle m-3 text-align-center">To deliver exceptional warehouse construction services that exceed client expectations, driven by innovation, quality, and sustainability.</p>
+                    <h2 class="m-3">Our Vision</h2>
+                    <p class="pstyle m-3 text-align-center">To be the leading warehouse construction company, known for our excellence in design, construction, and customer satisfaction.</p>
                 </div>
                 <div class="col-md-6 about-image">
                     <img src="assets/About.png" alt="About Us" class="img-fluid">
@@ -57,32 +58,32 @@
             </div>
         </section>
 
-        <section id="services" class="container-fluid mt-5 pt-5">
+        <section id="services" class="container-fluid mt-5 pt-5" data-aos="fade-up">
             <h2 class="section-title">Services</h2>
             <div class="row m-3">
                 <div class="col-md-4 service-item">
-                    <img src="assets/Service1.jpg" alt="Custom Warehouse Design" class="img-fluid animate__animated animate__fadeInLeft">
+                    <img src="assets/Service1.jpg" alt="Custom Warehouse Design" class="img-fluid">
                     <h3>Custom Warehouse Design</h3>
                     <p>We provide tailored warehouse designs to meet specific client needs, ensuring optimal space utilization and functionality.</p>
                 </div>
                 <div class="col-md-4 service-item">
-                    <img src="assets/Service2.jpg" alt="Sustainable Building Practices" class="img-fluid animate__animated animate__fadeInUp">
+                    <img src="assets/Service2.jpg" alt="Sustainable Building Practices" class="img-fluid">
                     <h3>Sustainable Building Practices</h3>
                     <p>Our construction practices prioritize sustainability, using eco-friendly materials and methods to reduce environmental impact.</p>
                 </div>
                 <div class="col-md-4 service-item">
-                    <img src="assets/Service3.jpg" alt="Maintenance and Support" class="img-fluid animate__animated animate__fadeInRight">
+                    <img src="assets/Service3.jpg" alt="Maintenance and Support" class="img-fluid">
                     <h3>Maintenance and Support</h3>
                     <p>We offer comprehensive maintenance and support services to ensure the longevity and efficiency of our constructed warehouses.</p>
                 </div>
             </div>
         </section>
 
-        <section id="featured-project" class="container-fluid featured-project-section mt-5 pt-5">
+        <section id="featured-project" class="container-fluid featured-project-section mt-5 pt-5" data-aos="fade-up">
             <h2 class="section-title">Featured Project</h2>
             <div class="row align-items-center m-2">
                 <div class="col-md-6">
-                    <img src="assets/Service1.jpg" alt="Featured Project" class="img-fluid animate__animated animate__fadeInLeft">
+                    <img src="assets/Service1.jpg" alt="Featured Project" class="img-fluid">
                 </div>
                 <div class="col-md-6">
                     <h3>Gurram Pallem, Vizag</h3>
@@ -97,7 +98,10 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script>
+        AOS.init();
+
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
@@ -109,6 +113,3 @@
     </script>
 </body>
 </html>
-
-
-
