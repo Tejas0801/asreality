@@ -30,14 +30,12 @@ header {
     padding: 5px 10px;
     transition: transform 0.3s ease, color 0.1s ease;
     font-size: large;
-
 }
 
 .nav-link:hover {
     color: black !important;
     transform: scale(1.4);
     transform-style: preserve-3d;
-    
 }
 
 .video-container {
@@ -67,16 +65,17 @@ video {
     color: white;
     z-index: 1;
     padding: 0 10px;
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.overlay.scrolled {
+    transform: translate(-50%, -200%);
+    opacity: 0;
 }
 
 .overlay h1 {
-    font-size: 4rem;
-}
-
-.scroll-indicator {
-    margin-top: 20px;
-    font-size: 2rem;
-    color: white;
+    font-size: 3rem; /* Adjust as needed */
+    white-space: nowrap; /* Ensure it stays on a single line */
 }
 
 .scroll-indicator a {
@@ -89,10 +88,15 @@ video {
     transform: scale(1.2);
 }
 
+/* Added padding to the .content section for better alignment on smaller screens */
 .content {
     position: relative;
     z-index: 2;
     padding-top: 100vh;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .about-section {
@@ -102,17 +106,20 @@ video {
 
 .about-text {
     padding: 20px;
+    text-align: center; /* Center text for better readability on mobile */
 }
 
 .about-image img {
     max-width: 100%;
     height: auto;
-    margin-left: 20px;
+    margin: 20px auto;
+    display: block;
 }
 
 #services {
     padding: 100px 0;
     background-color: #f9f9f9;
+    text-align: center; /* Center text for better readability on mobile */
 }
 
 .section-title {
@@ -152,7 +159,7 @@ video {
 }
 
 .service-item p {
-    font-size: 1rem;
+    font-size: 0.8em;
     color: #666;
 }
 
@@ -163,36 +170,36 @@ video {
 
 .featured-project-section {
     padding: 100px 0;
-    background-color: #000000;
+    background-color:white;
+    text-align: center; /* Center text for better readability on mobile */
 }
 
 .featured-project-section h2 {
-    color: #f9f6f6;
+    color: #000000;
 }
 
 .featured-project-section img {
     max-width: 100%;
     height: auto;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.5);
     margin: 0 auto;
     display: block;
 }
 
 .featured-project-section h3 {
-    color: #ffffff;
+    color: #000000;
     font-size: 2rem;
     margin-bottom: 10px;
 }
 
 .featured-project-section h4 {
-    color: #ffffff;
+    color: #000000;
     font-size: 1.5rem;
     margin-bottom: 20px;
 }
 
 .featured-project-section p {
-    color: #fffafa;
+    color: #010101;
     font-size: 1.1rem;
     margin-bottom: 20px;
 }
@@ -210,6 +217,131 @@ video {
     background-color: #555;
     color: #ffd700;
     text-decoration: none;
+}
+
+#contact {
+    background-color: #ffffff;
+    padding: 60px 0;
+}
+
+/* Consistent padding for contact form section and center text */
+.contact-form-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    background-color:#ffffff;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+#contact h2 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+#contact p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+#contact .form-group {
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+#contact .form-control {
+    border-radius: 30px;
+    box-shadow: none;
+    border-color: #ccc;
+    padding: 20px;
+    font-size: 1rem;
+}
+
+#contact .form-control:focus {
+    border-color: #007bff;
+    box-shadow: none;
+}
+
+#contact .btn-warning {
+    background-color: #ffd700;
+    border: none;
+    border-radius: 30px;
+    box-shadow: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #333;
+    width: 100%;
+}
+
+#contact .btn-warning:hover {
+    background-color: #ffbf00;
+    color: #fff;
+}
+
+#map {
+    width: 100%;
+    height: 100%;
+}
+
+.btn-creative {
+    background: linear-gradient(45deg, yellow, orange);
+    color: black;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-creative:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(45deg, orange, yellow);
+    color: white;
+}
+
+.service-item {
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.service-content {
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.service-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    background-color: #0b233c;
+}
+
+.service-item img {
+    transition: transform 0.3s ease;
+    border-radius: 10px;
+}
+
+.service-item:hover img {
+    transform: scale(1.05);
+}
+
+.service-item h3 {
+    transition: color 0.3s ease;
+}
+
+.service-item:hover h3 {
+    color: #ffc107;
 }
 
 @media (max-width: 768px) {
@@ -257,10 +389,87 @@ video {
     .featured-project-section p {
         font-size: 1rem;
     }
+
+    #map {
+        height: 300px;
+    }
+
+    .content {
+        padding-top: 100vh;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .about-section, #services, .featured-project-section, #contact {
+        text-align: center;
+        padding: 50px 15px;
+    }
+
+    .about-text {
+        padding: 20px;
+        text-align: center;
+    }
 }
 
+@media (min-width: 769px) {
+    #map {
+        height: 450px;
+    }
 
+    .about-section, #services, .featured-project-section, #contact {
+        padding: 100px 15px;
+    }
 
+    .about-text {
+        text-align: left;
+    }
+}
 
+@import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css');
 
+.contact-form-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-form-section .form-group {
+    margin-bottom: 1.5rem;
+}
+
+.contact-form-section .form-control {
+    border-radius: 5px;
+    padding: 15px;
+    font-size: 16px;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+.contact-form-section .btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    background: linear-gradient(45deg, #ffc107, #ff9800);
+    border: none;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background 0.3s ease, transform 0.3s ease;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+.contact-form-section .btn:hover {
+    background: linear-gradient(45deg, #ff9800, #ffc107);
+    transform: translateY(-3px);
+}
+
+#map iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    border-radius: 10px;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
 
