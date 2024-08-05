@@ -6,7 +6,7 @@ body {
 }
 
 main {
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -121,6 +121,33 @@ main {
     color: #ffffff;
 }
 
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .content-container {
+        flex-direction: column;
+    }
 
+    .content-container.reverse {
+        flex-direction: column;
+    }
+
+    .feature {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+
+    .features {
+        flex-direction: column;
+    }
+
+    .gallery-three .row {
+        --bs-gutter-x: 0;
+    }
+
+    .gallery-three__single {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+}
 
 
