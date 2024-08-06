@@ -638,7 +638,7 @@ video::-webkit-media-controls {
     height: 100%;
     border: 0;
     border-radius: 10px;
-    animation-duration: 1s;
+    
     animation-fill-mode: both;
 }
 
