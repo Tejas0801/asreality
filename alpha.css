@@ -74,7 +74,7 @@ body {
 }
 
 .feature {
-    flex: 1 1 100%;
+    flex: 1 1 calc(33.333% - 2rem);
     background-color: #fff;
     padding: 2rem;
     text-align: center;
@@ -103,7 +103,10 @@ body {
 .feature p {
     font-size: 1rem;
     color: #666;
-    text-align: justify;
+}
+
+.justified-text {
+    text-align: center;
 }
 
 .gallery-three__single {
@@ -172,19 +175,18 @@ body {
     }
 }
 
-/* Responsive Styles */
+/* Desktop-specific styles */
 @media (min-width: 769px) {
-
     .content-section {
         padding: 2rem 0;
-        margin:100px;
+        margin: 100px;
     }
     .content-container {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 20px;
-        padding: 20rem; /* Adjust the padding as needed */
-        margin: 100px /* Adjust the margin as needed */
+        padding: 5rem; /* Adjust the padding as needed */
+        margin: 2rem 5rem; /* Adjust the margin as needed */
     }
 
     .text-container,
@@ -195,9 +197,8 @@ body {
     .feature {
         flex: 1 1 calc(33.333% - 2rem);
     }
-
- 
 }
+
 
 
 

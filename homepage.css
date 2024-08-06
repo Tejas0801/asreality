@@ -8,6 +8,85 @@ body, html {
     overflow-x: hidden;
 }
 
+@media (min-width: 992px) {
+    .about-section .row {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center; /* Ensure text alignment */
+    }
+
+    .about-section .about-text {
+        max-width: 700px; /* Set a maximum width for the text content */
+        margin: 0 auto;
+    }
+
+    .about-section .about-image {
+        text-align: center;
+        margin: 0 auto;
+    }
+    .align{
+        
+        text-align: center;
+        margin-right:80px;
+        margin-left:80px;
+
+    }
+}
+
+
+
+.highlights {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    margin: 50px 0;
+    font-family: 'Lato', sans-serif;
+}
+
+.highlight-item {
+    flex: 1;
+    margin: 20px;
+}
+
+.highlight-number {
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 1rem 0;
+    color: #2c3e50;
+}
+
+.highlight-text {
+    font-size: 1.2rem;
+    color: #34495e;
+}
+
+.divider {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .highlights {
+        flex-wrap: nowrap; /* Prevent wrapping on larger screens */
+    }
+    
+    .divider {
+        display: inline-block;
+        font-size: 3rem;
+        color: #2c3e50;
+        margin: 0 20px;
+        line-height: 3rem; /* Align vertically with the numbers */
+    }
+
+    .highlight-item {
+        flex: 0 0 calc(33.333% - 40px); /* Adjusts width for larger screens */
+        margin: 0 20px; /* Adds spacing between items */
+    }
+}
+
+
 /* Ensure the navbar-toggler icon is visible */
 .navbar-toggler {
     border: none;
@@ -166,8 +245,8 @@ video::-webkit-media-controls {
 
 .about-image img {
     max-width: 100%;
-    height: auto;
-    margin: 20px auto;
+    height: 400px;
+    margin: 10px auto;
     display: block;
 }
 
@@ -270,7 +349,7 @@ video::-webkit-media-controls {
 
 .featured-project-section .btn-primary:hover {
     background-color: #555;
-    color: #ffd700;
+    color:#0A3655;
     text-decoration: none;
 }
 
@@ -395,7 +474,33 @@ video::-webkit-media-controls {
 }
 
 .service-item:hover h3 {
-    color: #ffc107;
+    color:#0A3655;
+}
+
+@media (max-width: 768px) {
+    .about-section {
+        padding: 3rem 1rem;
+    }
+
+    .about-text {
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+        text-align: center;
+        padding: 1rem;
+    }
+
+    .about-text p {
+        margin: 0 auto;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .pstyle {
+        font-size: 1rem;
+    }
 }
 
 @media (max-width: 768px) {
@@ -467,6 +572,8 @@ video::-webkit-media-controls {
     .about-text {
         text-align:justify;
     }
+  
+   
 }
 
 
@@ -477,12 +584,13 @@ video::-webkit-media-controls {
     }
 
     .about-section, #services, .featured-project-section, #contact {
-        
+        text-align: justify;
     }
 
     .about-text {
         text-align:justify;
     }
+  
 }
 
 @import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css');
